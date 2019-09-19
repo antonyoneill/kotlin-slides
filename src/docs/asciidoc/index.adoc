@@ -9,11 +9,9 @@ ifndef::sourcedir[:sourcedir: ../java]
 :toc: macro
 :toc-title:
 
-= LeadDev 2019
+= Kotlin: Nullity
 Antony O'Neill
 
-An overview of the key themes
+A brief introduction to nullity
 
-include::chapters/01-what-is-leaddev.adoc[]
-
-include::chapters/02-key-takeaways.adoc[]
+include::chapters/01-nullity.adoc[]

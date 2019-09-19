@@ -438,4 +438,16 @@ section.has-dark-background h3 {
 }
 
 
+section .footer {
+    position: initial;
+    font-size: .7em;
+    opacity: 0.4;
+    /* text-align: right; */
+}
+
+section .footer p {
+    padding: 0;
+    text-align: right;
+}
+
 

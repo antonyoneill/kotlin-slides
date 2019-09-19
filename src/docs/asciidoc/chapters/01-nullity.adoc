@@ -1,0 +1,66 @@
+== Nullity
+
+== What is Nullity `?` 
+
+* Kotlin tries to provide a null safe environment.
+* Things cannot be null, unless you define it as nullable.
+* If Kotlin thinks something can be nullable, it will force you to be careful.
+
+Wonderful.
+
+[.footer]
+Nullity
+
+== Declaring a nullable type
+
+When declaring a variable, you must declare the type. When you do so, using the `?` suffix tells Kotlin that the value can be null.
+
+----
+val a: String = "abc";
+val b: String? = null;
+
+// The type safety mechanism will prevent you from doing things like
+a.length; // 3
+b.length; // Error: "Only safe or not-null associated calls are allowed on a nullable receiver type"
+----
+
+[.footer]
+Nullity
+
+
+== But, `NullPointerExceptions` happen
+
+Only when:
+
+* `throw NullPointerException`
+* Use of !! on a null, nullable variable
+* Inconsistencies at initialisation
+* Java Interoperability..
+
+[.footer]
+Nullity
+
+== Null Checks
+
+----
+val a: String = "abc";
+val b: String? = null;
+
+val length = b?.length ?: -1; // -1
+----
+
+[.footer]
+Nullity
+
+== Safe Checks
+
+----
+val a: String = "abc";
+val b: String? = null;
+
+a.length; // 3
+b?.length; // null
+----
+
+[.footer]
+Nullity
